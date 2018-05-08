@@ -10,14 +10,20 @@ import 'element-ui/lib/theme-chalk/index.css';
 
 import errorHandle from './tools/errorHandle';
 import filters from './tools/filters';
+import initModal from './plugins/init.modal';
 
 import api from './tools/api';
+
+import loginModal from './plugins/login.modal';
 
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, { size: 'small' });
 Vue.use(errorHandle);
 Vue.use(filters);
+Vue.use(initModal);
+
+Vue.use(loginModal);
 
 Vue.prototype.$api = api;
 

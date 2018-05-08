@@ -1,6 +1,7 @@
 <template>
-    <div class="hello">
-        <h1>{{ msg }}</h1>
+    <div class="login">
+        <h1>登录</h1>
+
     </div>
 </template>
 
@@ -24,16 +25,7 @@ export default {
             })
             .catch(that.$errorHandle);
 
-        // 直接通过url调用接口
-        that.$api
-            .get('/login', {
-                username: 'zhangsan',
-                password: '123'
-            })
-            .then(function (data) {
-
-            })
-            .catch(that.$errorHandle);
+        that.$modal.login.show();
     }
 };
 </script>
