@@ -2,6 +2,7 @@
     <transition name="fade">
         <div class="modal-wrapper" v-show="show">
             内容
+            <button>按钮</button>
         </div>
     </transition>
 </template>

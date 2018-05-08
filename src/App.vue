@@ -13,9 +13,5 @@ export default {
 </script>
 
 <style lang="scss">
-$bcgcolor: #ccc;
-
-body #app {
-    background: $bcgcolor;
-}
+@import './assets/scss/main.scss';
 </style>

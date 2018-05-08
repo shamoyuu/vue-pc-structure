@@ -18,13 +18,16 @@ import loginModal from './plugins/login.modal';
 
 Vue.config.productionTip = false;
 
+/* 基础组件 */
 Vue.use(ElementUI, { size: 'small' });
 Vue.use(errorHandle);
 Vue.use(filters);
 Vue.use(initModal);
 
+/* 模态框 */
 Vue.use(loginModal);
 
+/* axios */
 Vue.prototype.$api = api;
 
 Vue.prototype.instance = new Vue({
