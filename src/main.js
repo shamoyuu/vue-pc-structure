@@ -4,6 +4,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './tools/router';
 import store from './tools/store';
+import messageCenter from './tools/messageCenter';
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -29,6 +30,8 @@ Vue.use(loginModal);
 
 /* axios */
 Vue.prototype.$api = api;
+
+Vue.prototype.$messageCenter = messageCenter;
 
 Vue.prototype.instance = new Vue({
     el: '#app',

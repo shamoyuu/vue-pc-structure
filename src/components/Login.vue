@@ -1,7 +1,8 @@
 <template>
     <div class="login">
         <h1>登录</h1>
-
+        <img src="../../static/img/logo.png">
+        <div class="logo"></div>
     </div>
 </template>
 
@@ -45,5 +46,10 @@ li {
 }
 a {
     color: #42b983;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    background: url(../../static/img/logo.png) 0 0 no-repeat;
 }
 </style>
